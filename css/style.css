@@ -8,3 +8,7 @@
 .footer .row {
     height: inherit;
 }
+.col-sm-12 {
+    display: flex;
+    justify-content: center;
+}
