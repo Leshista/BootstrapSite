@@ -92,6 +92,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <!-- Cards -->
             <div class="cards">
                 <div class="row">
                     <div class="col-4">
@@ -168,6 +169,39 @@
             </div>
         </div>
     </main>
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-window">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Johnson">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="0-000-00">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer bg-light mt-1-5">
         <div class="container">
             <div class="row">
@@ -175,7 +209,8 @@
                     <p class="copy">@2033. All Rights Recieved</p>
                 </div>
                 <div class="col-6 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-primary"> Contact Us</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal"> Contact
+                        Us</button>
                 </div>
             </div>
         </div>
