@@ -1,0 +1,10 @@
+.mt-1-5 {
+    margin-top: 1.5rem;
+}
+.footer {
+    height: 5rem;
+}
+.footer .container,
+.footer .row {
+    height: inherit;
+}
